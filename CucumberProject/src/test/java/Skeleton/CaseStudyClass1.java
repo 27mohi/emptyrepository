@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.test.DriverUtility;
+
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -19,7 +19,7 @@ import cucumber.api.java.en.When;
 
 public class CaseStudyClass1 {
 	WebDriver driver;
-	@Before
+	//@Before
 	public void init()
 	{
 	 driver=DriverUtility.getDriver("chrome");
@@ -27,7 +27,7 @@ public class CaseStudyClass1 {
 	 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	 driver.get("http://10.232.237.143:443/TestMeApp/login.htm");	
 	}
-	@After
+	//@After
 	public void after()
 	{   
 		//driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);

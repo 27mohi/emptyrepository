@@ -21,7 +21,7 @@ public class RegistrationSteps {
 	WebDriver driver;
 	RegisterPage page1;
 	
-	/*@Before
+	@Before
 	public void init()
 	{
 	 driver=DriverUtility.getDriver("chrome");
@@ -29,7 +29,7 @@ public class RegistrationSteps {
 	 driver.manage().window().maximize();
 	 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
-	}*/
+	}
 	
 	@Given("Url OF DemoWebShop")
 	public void url_OF_DemoWebShop() {
@@ -53,12 +53,12 @@ public class RegistrationSteps {
 	Assert.assertTrue(mssg.contains("registration completed"));
 		
 	}
-	/*@After
+	@After
 	public void after()
 	{
 		driver.close();
 		 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-	}*/
+	}
 
 
 }
